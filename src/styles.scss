@@ -104,10 +104,11 @@ body {
 
 .second {
   display: flex;
+  flex-wrap:wrap;
 }
 
 .teksti {
-  width: 50%;
+  width: 40%;
   margin-right: 100px;
   display: flex;
   flex-direction: column;
@@ -118,6 +119,7 @@ body {
 .third {
   background-image: url(./assets/images/backgrnd.png);
   background-size: cover;
+  
 }
 
 .randomtext {
@@ -126,8 +128,7 @@ body {
 
 .thirdblocks1 {
   background: white;
-  width: 39%;
-  padding: 20px;
+  width: 47.4%;
   margin: 20px;
   gap: 15px;
   display: flex;
@@ -146,12 +147,13 @@ body {
 
   .container3 {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    flex-wrap:wrap;
   }
 
 .featureddesign {
 display: flex;
-margin:0 auto;
+flex-wrap: wrap;
 border-bottom: solid 1px #E0E0E0;
 }
 
@@ -188,7 +190,7 @@ border-bottom: solid 1px #E0E0E0;
 }
 
 .second__seja {
-  width: 50%;
+  width: 40%;
   display: flex;
   justify-content: center;
 }
@@ -204,10 +206,6 @@ border-bottom: solid 1px #E0E0E0;
   font-size: 16px;
 }
 
-.section123 {
-  width : 60%;
-}
-
 .poga {
   font-size: 20px;
   line-height: 29px;
@@ -220,7 +218,7 @@ border-bottom: solid 1px #E0E0E0;
 }
 
 .smalltext {
-  padding-left: 75px;
+  padding-left: 20px;
   color: white
 }
 
@@ -268,3 +266,12 @@ border-bottom: solid 1px #E0E0E0;
   display: flex;
   gap: 50px;
 }
+
+@media screen and (max-width: 750px) {
+  .teksti, .second__seja, .thirdblocks1, .featureddesign__photo, .otrapuse   {width: 100%;}
+
+  
+
+  .nav  {display: none;}
+}
+
